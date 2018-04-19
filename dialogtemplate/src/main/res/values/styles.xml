@@ -1,0 +1,24 @@
+<resources>
+    <!--dialog全屏样式-->
+    <style name="Theme_dialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFullscreen">true</item>
+    </style>
+    <!-- dialog 取消按钮的样式 -->
+    <style name="rongshu_dialog_cancel_btn_style" parent="android:Widget.Button">
+        <item name="android:background">@drawable/dialog_left_selector</item>
+        <item name="android:textColor">@drawable/dialog_bt_text_color_selector</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:layout_height">45dp</item>
+    </style>
+    <!-- dialog 确定按钮的样式 -->
+    <style name="rongshu_dialog_enter_btn_style" parent="android:Widget.Button">
+        <item name="android:background">@drawable/dialog_right_selector</item>
+        <item name="android:textColor">@drawable/dialog_bt_text_color_selector</item>
+        <item name="android:layout_height">45dp</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+
+</resources>

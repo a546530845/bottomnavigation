@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="BottomView">
+        <!--字的颜色-->
+        <attr name="bottomview_text_color_selected" format="color"></attr>
+        <attr name="bottomview_text_color_normal" format="color"></attr>
+        <!--字的内容-->
+        <attr name="bottomview_text_content" format="string"></attr>
+        <!--<图片-->
+        <attr name="bottomview_image_src_selected" format="reference"></attr>
+        <attr name="bottomview_image_src_normal" format="reference"></attr>
+        <!--选中状态-->
+        <attr name="bottomview_check" format="boolean"></attr>
+    </declare-styleable>
+</resources>

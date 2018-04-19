@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:zxg="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/mainaty_navi"
+        android:layout_width="match_parent"
+        android:layout_height="69dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/line_height"
+            android:background="@color/line_color" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <com.zxg.bottomnavigation.BottomView
+                android:id="@+id/bottom_1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:onClick="onClickEvent"
+                zxg:bottomview_image_src_normal="@mipmap/img_1"
+                zxg:bottomview_image_src_selected="@mipmap/img_1_selected"
+                zxg:bottomview_text_color_normal="@color/colorLightGreen"
+                zxg:bottomview_text_color_selected="@color/colorTextGrey"
+                zxg:bottomview_text_content="测试1"
+                zxg:bottomview_check="true"></com.zxg.bottomnavigation.BottomView>
+            <!--check要配合fragment页面选中来设置-->
+
+            <com.zxg.bottomnavigation.BottomView
+                android:id="@+id/bottom_2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:onClick="onClickEvent"
+                zxg:bottomview_image_src_normal="@mipmap/img_2"
+                zxg:bottomview_image_src_selected="@mipmap/img_2_selected"
+                zxg:bottomview_text_color_normal="@color/colorLightGreen"
+                zxg:bottomview_text_color_selected="@color/colorTextGrey"
+                zxg:bottomview_text_content="测试2"></com.zxg.bottomnavigation.BottomView>
+
+            <com.zxg.bottomnavigation.BottomView
+                android:id="@+id/bottom_3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:onClick="onClickEvent"
+                zxg:bottomview_image_src_normal="@mipmap/img_3"
+                zxg:bottomview_image_src_selected="@mipmap/img_3_selected"
+                zxg:bottomview_text_color_normal="@color/colorLightGreen"
+                zxg:bottomview_text_color_selected="@color/colorTextGrey"
+                zxg:bottomview_text_content="测试3"></com.zxg.bottomnavigation.BottomView>
+        </LinearLayout>
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/fgt_room"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/mainaty_navi" />
+</RelativeLayout>

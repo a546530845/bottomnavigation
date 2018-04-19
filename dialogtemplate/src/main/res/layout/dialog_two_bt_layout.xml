@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/dialogLayout"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="60dp"
+    android:layout_marginRight="60dp"
+    android:layout_gravity="center"
+    android:background="@drawable/dialog_bg_round_corner_shape"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/tv_Msg"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/dialog_two_msgsize"
+        android:textColor="@color/black"
+        android:text="弹窗信息"
+        android:gravity="center"
+        android:padding="15dp"
+         />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line_height"
+        android:background="@color/line_color"/>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btn_Cancel"
+            style="@style/rongshu_dialog_cancel_btn_style"
+            android:layout_width="fill_parent"
+            android:layout_weight="1"
+            android:text="取消"/>
+
+        <TextView
+            android:layout_width="@dimen/line_height"
+            android:layout_height="match_parent"
+            android:background="@color/line_color"/>
+
+        <Button
+            android:id="@+id/btn_Confirm"
+            style="@style/rongshu_dialog_enter_btn_style"
+            android:layout_width="fill_parent"
+            android:layout_weight="1"
+            android:text="确定"/>
+    </LinearLayout>
+
+</LinearLayout>

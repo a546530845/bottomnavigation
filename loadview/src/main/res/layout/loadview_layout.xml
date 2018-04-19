@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- loadView加载页面 -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff" >
+
+    <RelativeLayout
+        android:id="@+id/relay_noresult"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true" >
+
+        <ImageView
+            android:id="@+id/iv_noresult"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:src="@mipmap/ic_launcher" />
+
+        <TextView
+            android:id="@+id/tv_noresult"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/iv_noresult"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="20dp"
+            android:gravity="center_horizontal"
+            android:text="@string/loadview_bad_wangluo"
+            android:textSize="14sp" />
+
+        <ProgressBar
+            android:id="@+id/loading_progressbar_update"
+            style="@android:style/Widget.ProgressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_noresult"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="10dp"
+            android:indeterminateDrawable="@drawable/loading_head_hb" />
+    </RelativeLayout>
+
+</RelativeLayout>
