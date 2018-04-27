@@ -32,4 +32,5 @@ dependencies {
     compile 'com.android.support:design:26.0.0-alpha1'
     compile project(':dialogtemplate')
     compile 'com.android.support:percent:26.+'
+    compile files('libs/android-async-http-1.4.6.jar')
 }
